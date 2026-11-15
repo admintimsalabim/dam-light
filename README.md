@@ -1,128 +1,128 @@
 # DAM Light – Brand Portal
 
-Een lichtgewicht Digital Asset Management-portaal om aan het management te laten zien hoe een DAM werkt:
-kantoren en salespartners loggen in, vinden visueel het juiste middel (logo, roll-up, brochure, beurswand…)
-en downloaden direct het juiste bestand voor **drukwerk (CMYK)**, **steunkleur (PMS)** of **digitaal (RGB)**.
+A lightweight Digital Asset Management portal designed to demonstrate to management how a DAM works:
+offices and sales partners log in, visually find the right asset (logo, roll-up banner, brochure, exhibition wall…)
+and immediately download the correct file for **print (CMYK)**, **spot color (PMS)** or **digital (RGB)**.
 
-De demo bevat een fictief merk (**NORVIQ**) met echte, werkende bestanden: vector-logo's in CMYK/PMS/RGB,
-drukklare roll-ups van 850 × 2000 mm met afloop en snijtekens, een brochure, flyer, beurswand, social banners en
-een gesimuleerde downloadhistorie, zodat het dashboard er meteen gevuld uitziet.
+The demo includes a fictional brand (**NORVIQ**) with real, working files: vector logos in CMYK/PMS/RGB,
+print-ready roll-up banners measuring 850 × 2000 mm with bleed and crop marks, a brochure, flyer, exhibition wall, social banners and
+a simulated download history, so the dashboard looks populated right away.
 
-## Wat zit erin
+## What's included
 
-**Voor gebruikers (kantoren en partners)**
+**For users (offices and partners)**
 
-- Startpagina met zoeken, populaire snelkoppelingen en categorietegels
-- Bibliotheek met filters op categorie, toepassing (CMYK/PMS/RGB/Office) en taal, plus sorteren
-- Detailpagina met groot voorbeeld, uitleg "Welk bestand heb ik nodig?", downloads gegroepeerd per toepassing en alles als ZIP
-- Bestanden krijgen bij het downloaden een nette naam, bijvoorbeeld `norviq-roll-up-beurs-benelux_drukklare-pdf-cmyk.pdf`
+- Homepage with search, popular shortcuts and category tiles
+- Library with filters for category, application (CMYK/PMS/RGB/Office) and language, plus sorting
+- Detail page with a large preview, an explanation of "Which file do I need?", downloads grouped by application and an option to download everything as a ZIP
+- Files are given a clean name when downloaded, for example `norviq-roll-up-exhibition-benelux_print-ready-pdf-cmyk.pdf`
 
-**Twee talen (Nederlands / Engels)**
+**Two languages (Dutch / English)**
 
-- Elke gebruiker heeft een eigen interfacetaal (in te stellen door de beheerder) en kan zelf wisselen via **NL / EN** rechtsboven; die keuze wordt bewaard
-- Ook de inhoud is tweetalig: titel, omschrijving en bestandslabels hebben een optioneel Engels veld. Leeg = de Nederlandse tekst wordt getoond
-- Bestandsnamen van downloads volgen de taal van de gebruiker
-- Extra taal toevoegen: kopieer `lang/en.php` naar bijvoorbeeld `lang/de.php`, vertaal de teksten en voeg de taal toe aan `languages` in `config.php`
+- Each user has their own interface language (set by the administrator) and can switch themselves using **NL / EN** in the top-right corner; the selection is saved
+- The content is also bilingual: titles, descriptions and file labels have an optional English field. If left blank, the Dutch text is displayed
+- Downloaded filenames follow the user's language
+- To add another language: copy `lang/en.php` to, for example, `lang/de.php`, translate the text and add the language to `languages` in `config.php`
 
-**Gebruiksrechten (eigen beeld / stockfoto)**
+**Usage rights (own imagery / stock photography)**
 
-- Per asset stel je in of het een *eigen beeld* is (iedereen mag het gebruiken) of een *stockfoto* (alleen de eigen organisatie, inclusief dochterkantoren)
-- Distributeurs/salespartners zien stockfoto's wel, met een watermerk, maar kunnen ze niet downloaden. Dit wordt ook op de server afgedwongen, dus ook een directe downloadlink werkt niet
-- Ze krijgen een duidelijke melding, het stock-ID om te kopiëren en een knop naar de foto bij de leverancier (bijv. Adobe Stock)
-- Kantoren zien een melding dat de foto alleen intern gebruikt mag worden en niet doorgestuurd mag worden
-- Optionele vervaldatum van de licentie: daarna kan alleen de beheerder de foto nog downloaden. Het dashboard waarschuwt 90 dagen van tevoren
-- Filter "Gebruiksrechten" in de bibliotheek
+- For each asset, you can specify whether it is *own imagery* (anyone may use it) or a *stock photo* (only the user's own organization, including subsidiary offices, may use it)
+- Distributors/sales partners can see stock photos with a watermark, but cannot download them. This is also enforced on the server, so even a direct download link will not work
+- They receive a clear notification, the stock ID to copy and a button linking to the photo at the supplier (e.g. Adobe Stock)
+- Offices see a notification that the photo may only be used internally and must not be forwarded
+- Optional licence expiry date: after this date, only the administrator can download the photo. The dashboard issues a warning 90 days in advance
+- "Usage rights" filter in the library
 
-**Voor beheer (HQ)**
+**For administrators (HQ)**
 
-- Dashboard: downloads per dag, per toepassing, meest gedownload, actiefste organisaties, slapende accounts
-- Assets beheren: gegevens, voorbeeldafbeelding, meerdere bestanden tegelijk uploaden (CMYK/PMS/RGB wordt aan de bestandsnaam herkend), concept/gepubliceerd
-- Zichtbaarheid per asset: *iedereen* of *alleen eigen kantoren*
-- Gebruikers: rollen (beheerder, dochterkantoor, salespartner), vervaldatum voor tijdelijke partners, (de)activeren, wachtwoord resetten
-- Downloadlog met export naar Excel (CSV)
-- Huisstijl: bedrijfsnaam, portaalnaam, hoofd- en accentkleur en het logo in de kopbalk aanpassen, met live voorbeeld en een knop om terug te gaan naar de standaard
+- Dashboard: downloads per day, per application, most downloaded assets, most active organizations and dormant accounts
+- Manage assets: details, preview image, upload multiple files at once (CMYK/PMS/RGB is identified from the filename), draft/published status
+- Visibility per asset: *everyone* or *own offices only*
+- Users: roles (administrator, subsidiary office, sales partner), expiry date for temporary partners, activate/deactivate accounts, reset passwords
+- Download log with export to Excel (CSV)
+- Branding: customize company name, portal name, primary and accent colors, and the logo in the header bar, with a live preview and a button to restore the defaults
 
-## Demo-accounts
+## Demo accounts
 
-| Rol            | E-mail                | Wachtwoord |
-|----------------|-----------------------|------------|
-| Beheerder (HQ) | admin@demo.local      | Admin123!  |
-| Dochterkantoor | kantoor.de@demo.local | Demo123!   |
-| Salespartner   | partner@demo.local    | Demo123!   |
+| Role             | Email                 | Password  |
+|------------------|-----------------------|-----------|
+| Administrator (HQ)| admin@demo.local      | Admin123! |
+| Subsidiary office | kantoor.de@demo.local | Demo123!  |
+| Sales partner    | partner@demo.local    | Demo123!  |
 
-Tip voor de presentatie: log eerst in als partner (die ziet de beurswand niet, want die is "alleen kantoren"),
-daarna als dochterkantoor, en sluit af met het beheerdashboard.
+Tip for the presentation: first log in as a partner (who cannot see the exhibition wall because it is "offices only"),
+then log in as a subsidiary office, and finish with the admin dashboard.
 
-## Snel starten op je eigen laptop (aanbevolen voor een demo)
+## Quick start on your own laptop (recommended for a demo)
 
-Je hebt PHP 8.2 of nieuwer nodig, met de extensies `pdo_sqlite` (of `pdo_mysql`), `fileinfo` en `zip`.
+You need PHP 8.2 or later, with the `pdo_sqlite` (or `pdo_mysql`), `fileinfo` and `zip` extensions.
 
 ```bash
 cd dam-light
-php bin/install.php          # maakt de SQLite-database en laadt de demo-inhoud
+php bin/install.php          # creates the SQLite database and loads the demo content
 php -S localhost:8000 -t public
 ```
 
-Open daarna http://localhost:8000.
+Then open http://localhost:8000.
 
-- Opnieuw beginnen: `php bin/install.php --fresh`
-- Zonder demo-inhoud, alleen één beheerder: `php bin/install.php --fresh --no-demo`
+- Start over: `php bin/install.php --fresh`
+- Without demo content, with just one administrator: `php bin/install.php --fresh --no-demo`
 
-## Op een webserver (Apache/Nginx)
+## On a web server (Apache/Nginx)
 
-1. Upload de hele map. Stel de **document root in op** `public/`. Kan dat niet, dan stuurt de meegeleverde `.htaccess` alles door naar `public/`.
-2. Zorg dat de webserver kan schrijven in `storage/`.
-3. Geen SSH? Ga naar `/install.php`, klik op *Installeren* en **verwijder daarna** `public/install.php`.
-4. Zet in `config.php` de optie `demo_mode` op `false`, zodat de demo-accounts niet meer op het inlogscherm staan.
+1. Upload the entire folder. Set the **document root to** `public/`. If that is not possible, the included `.htaccess` redirects everything to `public/`.
+2. Make sure the web server has write access to `storage/`.
+3. No SSH? Go to `/install.php`, click *Install* and **then delete** `public/install.php`.
+4. In `config.php`, set the `demo_mode` option to `false` so the demo accounts no longer appear on the login screen.
 
-Uploads groter dan 2 MB? Verhoog dan `upload_max_filesize` en `post_max_size` in `php.ini`, bijvoorbeeld naar `256M`.
+Uploads larger than 2 MB? Increase `upload_max_filesize` and `post_max_size` in `php.ini`, for example to `256M`.
 
-## MySQL / MariaDB in plaats van SQLite
+## MySQL / MariaDB instead of SQLite
 
-Zet in `config.php` `'driver' => 'mysql'` en vul de gegevens in. Maak eerst een lege database aan:
+Set `'driver' => 'mysql'` in `config.php` and fill in the connection details. First create an empty database:
 
 ```sql
 CREATE DATABASE dam_light CHARACTER SET utf8mb4;
-CREATE USER 'dam_user'@'localhost' IDENTIFIED BY 'sterk-wachtwoord';
+CREATE USER 'dam_user'@'localhost' IDENTIFIED BY 'strong-password';
 GRANT ALL ON dam_light.* TO 'dam_user'@'localhost';
 ```
 
-Draai daarna `php bin/install.php`. De app is getest op zowel SQLite als MariaDB.
+Then run `php bin/install.php`. The app has been tested with both SQLite and MariaDB.
 
-## Mappenstructuur
+## Folder structure
 
 ```
-config.php          instellingen (database, opslag, talen)
-app/                logica: bootstrap, layout, bestanden, databaseschema, installer, talen, huisstijl
-lang/               vertalingen (en.php)
-bin/install.php     installatie via de commandline
-public/             webroot: pagina's, admin/, assets/style.css
-storage/            database (SQLite), geüploade bestanden en voorbeelden (niet publiek bereikbaar)
-demo-content/       bronbestanden van het demo-merk NORVIQ
+config.php          settings (database, storage, languages)
+app/                logic: bootstrap, layout, files, database schema, installer, languages, branding
+lang/               translations (en.php)
+bin/install.php     command-line installation
+public/             webroot: pages, admin/, assets/style.css
+storage/            database (SQLite), uploaded files and previews (not publicly accessible)
+demo-content/       source files for the demo brand NORVIQ
 ```
 
-Bestanden staan buiten de webroot en worden alleen via `download.php` uitgeleverd na een rechtencontrole. Elke download wordt gelogd.
+Files are stored outside the webroot and are only served through `download.php` after a permission check. Every download is logged.
 
-## Eigen huisstijl
+## Custom branding
 
-Alles via **Beheer → Huisstijl**: naam, kleuren en logo. Wijzigingen gelden direct voor iedereen, ook op de inlogpagina.
-Het logo wordt opgeslagen in `storage/branding/`. SVG-logo's worden in een afgeschermde modus geserveerd, zodat eventuele scripts erin niet worden uitgevoerd.
+Everything is managed via **Admin → Branding**: name, colors and logo. Changes take effect immediately for everyone, including on the login page.
+The logo is stored in `storage/branding/`. SVG logos are served in a restricted mode to prevent any scripts they may contain from being executed.
 
-## Bijwerken vanaf een eerdere versie
+## Updating from an earlier version
 
-Vervang de programmabestanden, maar laat `config.php` en de map `storage/` staan. Bij de eerste paginaweergave werkt de app de database zelf bij
-(nieuwe kolommen voor taal en Engelse teksten en een tabel `settings`). Je hoeft niets opnieuw te installeren.
+Replace the program files, but leave `config.php` and the `storage/` folder in place. When the app is first opened, it updates the database itself
+(new columns for language and English text, and a `settings` table). You do not need to reinstall anything.
 
-## Bewust níet in deze light-versie
+## Deliberately not included in this light version
 
-Dit is een demonstratiemodel. Voor productie zou je verwachten (en dit bieden Bynder, Canto en vergelijkbare pakketten standaard):
+This is a demo model. For production use, you would expect (and these are standard features in Bynder, Canto and similar packages):
 
-- MFA en/of single sign-on (Entra ID voor eigen kantoren, gastaccounts voor partners)
-- Automatische previews en conversie (bijvoorbeeld PDF → JPG, of een logo direct exporteren in elk formaat)
-- Versiebeheer, vervaldatums en licentierechten per bestand
-- Goedkeuringsworkflows, bijvoorbeeld een lokaal kantoor dat een aangepaste roll-up laat goedkeuren
-- Templates die je zelf bewerkt ("brand templates"), zoals een roll-up met eigen standnummer
-- Meertaligheid van de interface, wachtwoord-vergeten via e-mail, en virusscan op uploads
-- Integraties met InDesign, Figma, Office, het CMS en de PIM
+- MFA and/or single sign-on (Entra ID for own offices, guest accounts for partners)
+- Automatic previews and conversion (for example, PDF → JPG, or exporting a logo directly in any format)
+- Version control, expiry dates and licence rights per file
+- Approval workflows, for example when a local office submits a customized roll-up banner for approval
+- Templates that you can edit yourself ("brand templates"), such as a roll-up banner with your own stand number
+- A multilingual interface, password reset by email and virus scanning of uploads
+- Integrations with InDesign, Figma, Office, the CMS and the PIM
 
-Juist deze lijst helpt in het gesprek met het management: de demo laat de waarde zien, en de lijst laat zien wat een professioneel pakket daarbovenop biedt.
+This list is particularly useful in discussions with management: the demo demonstrates the value, while the list shows what a professional package offers on top of that.
