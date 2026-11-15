@@ -1,7 +1,7 @@
 # DAM Light – Brand Portal
 
-A lightweight Digital Asset Management portal designed to demonstrate to management how a DAM works:
-offices and sales partners log in, visually find the right asset (logo, roll-up banner, brochure, exhibition wall…)
+A lightweight Digital Asset Management portal designed for smaller companies with a few subsidiaries or distributors.
+Offices and sales partners log in, visually find the right asset (logo, roll-up banner, brochure, exhibition wall…)
 and immediately download the correct file for **print (CMYK)**, **spot color (PMS)** or **digital (RGB)**.
 
 The demo includes a fictional brand (**NORVIQ**) with real, working files: vector logos in CMYK/PMS/RGB,
