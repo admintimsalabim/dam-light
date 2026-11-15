@@ -126,3 +126,9 @@ This is a demo model. For production use, you would expect (and these are standa
 - Integrations with InDesign, Figma, Office, the CMS and the PIM
 
 This list is particularly useful in discussions with management: the demo demonstrates the value, while the list shows what a professional package offers on top of that.
+## Donate
+
+This application is free to use. When you think this will come in handy, a small donation will help to fix issues and optimize this application.
+https://ko-fi.com/tim220172
+
+*DAM-light was built in collaboration with Claude.ai — https://claude.ai*
